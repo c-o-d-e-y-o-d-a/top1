@@ -1,5 +1,4 @@
 var you;
-let incTurn1=0;
 var yourScore=0;
 var opponent;
 var opponentScore=0;
@@ -17,17 +16,14 @@ window.onload=function(){
 
 
     }
-    choice.addEventListener("click",incTurn);
+    
 
     
 }
 
 
 
-function incTurn(){
-    let incTurn1=incTurn1+1;
-    
-}
+
 
 function SelectChoice(){
     you = this.id;
