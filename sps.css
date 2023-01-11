@@ -1,7 +1,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
+    background-color: aquamarine;
+    }
 
 
 #opponent-choice{
@@ -19,11 +20,13 @@ body{
 }
 
 #choices {
-    width:240px;
+    width:250px;
     height:80px;
     background-color: blanchedalmond;
     margin: 0 auto;
     margin-top: 10px;
+    border: 7px;
+    background-color: black;
 }
 
 #choices img
@@ -31,3 +34,4 @@ body{
     width: 80px;
     height:80px;
 }
+

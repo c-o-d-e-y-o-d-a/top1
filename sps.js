@@ -1,4 +1,5 @@
 var you;
+let incTurn1=0;
 var yourScore=0;
 var opponent;
 var opponentScore=0;
@@ -10,21 +11,31 @@ window.onload=function(){
         choice.id=choices[i];
         choice.src = choices[i] + ".png";
         choice.addEventListener("click",SelectChoice);
+        
 
         document.getElementById("choices").append(choice);
 
 
     }
+    choice.addEventListener("click",incTurn);
+
+    
 }
 
 
+
+function incTurn(){
+    let incTurn1=incTurn1+1;
+    
+}
 
 function SelectChoice(){
     you = this.id;
     document.getElementById("your-choice").src = you + ".png";
 
-    opponent = choices[Math.floor(Math.random * 3)];
+    opponent = choices[Math.floor(Math.random() * 3)];
     document.getElementById("opponent-choice").src = opponent + ".png";
+    
 
 
 
@@ -66,7 +77,7 @@ function SelectChoice(){
 
     }
     document.getElementById("your-score").innerText=yourScore;
-    document.getElementById("opponent-score").innerText=opponent;
+    document.getElementById("opponent-score").innerText=opponentScore;
 
 
 
